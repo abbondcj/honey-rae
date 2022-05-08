@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react"
+import "./Tickets.css"
 
 export const TicketList = ({tickets, employees, customers}) => {
     return (
         <>
+        <h2>Ticket List</h2>
             {
                 tickets.map(
                     (ticket) => {
