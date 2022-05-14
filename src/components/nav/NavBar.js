@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { Home } from "../home/Home"
 import "./NavBar.css"
 
 export const NavBar = () => {
@@ -15,10 +16,13 @@ export const NavBar = () => {
                 <Link className="navbar__link" to="/tickets">Tickets</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar_link" to="#"
+                <Link className="navbar_link" to="/login"
                     onClick={
+                        () => {
                         localStorage.removeItem("honey_customer")
-                    }>Logout
+                    }
+                    }
+                    >Logout
                 </Link>
             </li>
         </ul>

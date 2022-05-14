@@ -1,3 +1,14 @@
 .tickets {
     margin-bottom: 5%;
 }
+
+.emergency {
+    background-color: red;
+    padding: 2%;
+}
+
+.ticket {
+    background-color: grey;
+    padding: 2%;
+
+}
